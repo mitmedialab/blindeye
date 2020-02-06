@@ -1,10 +1,16 @@
 import http.server
 import socketserver
 
+class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/':
+            self.path = 'main.html'
+        return http.server.SimpleHTTPRequestHandler.do_GET(self)
+
+handler_object = MyHttpRequestHandler
+
 PORT = 8000
+my_server = socketserver.TCPServer(("", PORT), handler_object)
 
-handler = http.server.SimpleHTTPRequestHandler
 
-with socketserver.TCPServer(("", PORT), handler) as httpd:
-    print("Server started at localhost:" + str(PORT))
-    httpd.serve_forever()
+my_server.serve_forever()
