@@ -1,0 +1,34 @@
+OpenCV python official tutorial camera calibration
+https://docs.opencv.org/master/dc/dbb/tutorial_py_calibration.html
+
+OpenCV python official tutorial pose estimation
+https://docs.opencv.org/master/d7/d53/tutorial_py_pose.html
+
+
+
+Camera coordinates to world coordinates
+https://stackoverflow.com/questions/18637494/camera-position-in-world-coordinate-from-cvsolvepnp
+
+camera position in world coordinate system
+https://stackoverflow.com/questions/14444433/calculate-camera-world-position-with-opencv-python
+https://stackoverflow.com/questions/14515200/python-opencv-solvepnp-yields-wrong-translation-vector?lq=1
+
+camera rotation (Euler angles) in world coordinate system
+https://stackoverflow.com/questions/14515200/python-opencv-solvepnp-yields-wrong-translation-vector?lq=1
+https://www.learnopencv.com/rotation-matrix-to-euler-angles/
+# https://github.com/mpatacchiola/deepgaze/issues/3
+# https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html
+
+OpenCV coordinate system
+https://stackoverflow.com/questions/17987465/how-is-the-camera-coordinate-system-in-opencv-oriented
+
+
+Python Angle between 2 vectors
+https://stackoverflow.com/questions/2827393/angles-between-two-n-dimensional-vectors-in-python/13849249#13849249
+
+Python signed angle from one vector to another
+https://stackoverflow.com/questions/2150050/finding-signed-angle-between-vectors
+
+
+for understanding
+http://ksimek.github.io/2012/08/22/extrinsic/
