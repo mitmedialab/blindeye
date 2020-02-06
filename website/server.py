@@ -1,10 +1,13 @@
 import http.server
 import socketserver
+import sys
+sys.path.insert(1, '../tf-pose-estimation')
+from run_webcam import *
 
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
-            self.path = 'main.html'
+            self.path = './templates/main.html'
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 handler_object = MyHttpRequestHandler
